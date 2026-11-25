@@ -12,7 +12,7 @@ st.set_page_config(
 )
 import base64
 
-with open("tomato_background.jpg", "rb") as image_file:
+with open("istockphoto-1927716071-612x612.jpg", "rb") as image_file:
     encoded_image = base64.b64encode(image_file.read()).decode()
 
 st.markdown(
