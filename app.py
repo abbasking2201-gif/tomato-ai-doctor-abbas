@@ -27,31 +27,31 @@ st.markdown(
         background-position: center;
         background-attachment: fixed;
     }}
-    /* Larger and clearer text */
+/* Larger and clearer text */
 .stApp p,
 .stApp label,
 .stApp li,
-.stApp [data-testid="stMarkdownContainer"] p {
+.stApp [data-testid="stMarkdownContainer"] p {{
     font-size: 20px !important;
     line-height: 1.7 !important;
-}
+}}
 
-h1 {
+h1 {{
     font-size: 38px !important;
-}
+}}
 
-h2 {
+h2 {{
     font-size: 30px !important;
-}
+}}
 
-h3 {
+h3 {{
     font-size: 25px !important;
-}
+}}
 
-.stButton button {
+.stButton button {{
     font-size: 20px !important;
     font-weight: bold !important;
-}
+}}
     </style>
     """,
     unsafe_allow_html=True
