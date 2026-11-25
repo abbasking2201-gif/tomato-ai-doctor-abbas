@@ -1,4 +1,3 @@
-
 import os
 
 folder = "/content/drive/MyDrive/Tomato_Project"
