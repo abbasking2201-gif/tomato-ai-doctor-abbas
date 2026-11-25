@@ -10,7 +10,27 @@ st.set_page_config(
     page_icon="🍅",
     layout="centered"
 )
+import base64
 
+with open("tomato_background.jpg", "rb") as image_file:
+    encoded_image = base64.b64encode(image_file.read()).decode()
+
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: linear-gradient(
+            rgba(255,255,255,0.78),
+            rgba(255,255,255,0.78)
+        ), url("data:image/jpeg;base64,{encoded_image}");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 # Disease information: Arabic and English
 diseases = {
     "Tomato_Bacterial_spot": {
